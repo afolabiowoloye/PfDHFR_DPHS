@@ -17,8 +17,7 @@ except ImportError:
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_URL = "https://github.com/afolabiowoloye/PfDHFR_DPHS/raw/main/DHFR_DHPS_analysis.xlsx"
-#LOGO_PATH = BASE_DIR / "logo" / "synergy_logo.png"
-LOGO_PATH = "logo/synergy_logo.png"
+LOGO_PATH = BASE_DIR / "logo" / "synergy_logo.png"
 SHEET_NAME = "Sheet1"
 DHFR_SNPS = ["N51I", "C59R", "S108N", "I164L"]
 DHPS_SNPS = ["I431V", "S436A", "A437G", "K540E", "A581G", "A613S"]
