@@ -1,6 +1,5 @@
 import re
 import math
-from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -16,7 +15,7 @@ except ImportError:
     chi2 = None
 
 DATA_URL = "https://github.com/afolabiowoloye/PfDHFR_DPHS/raw/main/DHFR_DHPS_analysis.xlsx"
-LOGO_PATH = Path("logo/synergy_logo.png")
+LOGO_URL = "https://raw.githubusercontent.com/afolabiowoloye/PfDHFR_DPHS/main/logo/synergy_logo.png"
 SHEET_NAME = "Sheet1"
 DHFR_SNPS = ["N51I", "C59R", "S108N", "I164L"]
 DHPS_SNPS = ["I431V", "S436A", "A437G", "K540E", "A581G", "A613S"]
@@ -523,10 +522,7 @@ st.markdown(
 )
 
 with st.sidebar:
-    if LOGO_PATH.is_file():
-        st.image(str(LOGO_PATH), width=190)
-    else:
-        st.warning(f"Sidebar logo not found: {LOGO_PATH.name}")
+    st.image(LOGO_URL, width=190)
     st.markdown("### DHFR / DHPS Explorer")
     st.caption("Global molecular surveillance")
     st.divider()
