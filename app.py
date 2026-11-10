@@ -14,7 +14,7 @@ try:
 except ImportError:
     chi2 = None
 
-DATA_URL = "ashttps://github.com/afolabiowoloye/PfDHFR_DPHS/raw/main/DHFR_DHPS_analysis.xlsx"
+DATA_URL = "https://github.com/afolabiowoloye/PfDHFR_DPHS/raw/main/DHFR_DHPS_analysis.xlsx"
 LOGO_URL = "https://raw.githubusercontent.com/afolabiowoloye/PfDHFR_DPHS/main/logo/synergy_logo.png"
 SHEET_NAME = "Sheet1"
 DHFR_SNPS = ["N51I", "C59R", "S108N", "I164L"]
